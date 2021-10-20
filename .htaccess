@@ -1,0 +1,33 @@
+#Mở chức năng rewrite
+RewriteEngine ON
+# Định nghĩa thư mục gốc
+RewriteBase /
+# bắt đầu viết lại đường dẫn
+RewriteRule ^lien-he$ Doan1/contact.php
+
+RewriteRule ^trang-chu$ Doan1/index.php
+
+RewriteRule ^doi-mat-khau$ Doan1/changepass.php
+
+RewriteRule ^dang-nhap$ Doan1/login.php
+
+RewriteRule ^thong-tin$ Doan1/infoUser.php
+
+RewriteRule ^(.*)-([0-9]*)-page-([0-9]*)$ Doan1/cat.php?cat_id=$2&page=$3
+
+RewriteRule ^(.*)-c-([0-9]*)$ Doan1/cat.php?cat_id=$2
+
+RewriteRule ^(.*)-([0-9]*)$ Doan1/detail.php?story_id=$2
+
+
+
+
+
+
+
+
+
+
+
+
+
